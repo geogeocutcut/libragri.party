@@ -1,10 +1,11 @@
-﻿
-using libragri.core.common;
+﻿using libragri.core.common;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace libragri.party.model
 {
-    public class PartyRoleData:Entity<string>
+    public class Country : Entity<string>
     {
         public string Id
         {
@@ -19,14 +20,14 @@ namespace libragri.party.model
                 _id = value;
             }
         }
+        public string Label { get; set; }
 
-        public RoleData role { get; set; }
-        public DateTime FromDate { get; set; }
-        public DateTime ThruDate { get; set; }
-
+        public string Code_INSEE_2C { get; set; }
+        public string Code_INSEE_3C { get; set; }
         public override string GetId()
         {
             return Id;
         }
+
     }
 }

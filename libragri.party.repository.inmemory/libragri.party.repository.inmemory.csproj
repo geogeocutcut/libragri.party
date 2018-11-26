@@ -4,8 +4,4 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\libragri.core\libragri.core.common\libragri.core.common.csproj" />
-  </ItemGroup>
-
 </Project>
