@@ -1,9 +1,10 @@
 ﻿
 using libragri.core.common;
+using System;
 
 namespace libragri.party.model
 {
-    public class RoleData:Entity<string>
+    public class Role:Entity<string>
     {
         public string Id
         {
