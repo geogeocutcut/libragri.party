@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace libragri.party.model
 {
-    public class PartyData:Entity<string>
+    public class Party:Entity<string>
     {
         public string Id {
             get

@@ -4,7 +4,7 @@ using System;
 
 namespace libragri.party.model
 {
-    public class PartyRoleData:Entity<string>
+    public class PartyRole:Entity<string>
     {
         public string Id
         {
@@ -20,7 +20,7 @@ namespace libragri.party.model
             }
         }
 
-        public RoleData role { get; set; }
+        public Role role { get; set; }
         public DateTime FromDate { get; set; }
         public DateTime ThruDate { get; set; }
 
