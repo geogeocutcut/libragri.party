@@ -11,6 +11,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\libragri.core\libragri.core.common\libragri.core.common.csproj" />
+    <ProjectReference Include="..\libragri.core\libragri.core.webapi\libragri.core.webapi.csproj" />
   </ItemGroup>
 
 </Project>

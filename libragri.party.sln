@@ -5,25 +5,27 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libragri.core", "libragri.core", "{5D6B8161-BF10-49D6-8EB4-615B09F75E5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libragri.core.common", "libragri.core\libragri.core.common\libragri.core.common.csproj", "{1B317DA7-567C-442E-9C02-DA4F9AC82407}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.core.common", "libragri.core\libragri.core.common\libragri.core.common.csproj", "{1B317DA7-567C-442E-9C02-DA4F9AC82407}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libragri.core.repository", "libragri.core\libragri.core.repository\libragri.core.repository.csproj", "{15F08A42-C975-4D56-AD21-6C93467632B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.core.repository", "libragri.core\libragri.core.repository\libragri.core.repository.csproj", "{15F08A42-C975-4D56-AD21-6C93467632B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libragri.core.specification", "libragri.core\libragri.core.specification\libragri.core.specification.csproj", "{48E0437B-9CCF-4C66-A268-2262CAA0170E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.core.specification", "libragri.core\libragri.core.specification\libragri.core.specification.csproj", "{48E0437B-9CCF-4C66-A268-2262CAA0170E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libragri.core.repository.inmemorydb", "libragri.core\libragri.core.repository.inmemorydb\libragri.core.repository.inmemorydb.csproj", "{F1B71EA9-EAA7-4732-BB7D-8B004765FADD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.core.repository.inmemorydb", "libragri.core\libragri.core.repository.inmemorydb\libragri.core.repository.inmemorydb.csproj", "{F1B71EA9-EAA7-4732-BB7D-8B004765FADD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.party.model", "libragri.party.model\libragri.party.model.csproj", "{B17F33C0-EF55-4559-A89F-41DCAA51A342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libragri.party.repository.inmemory", "libragri.party.repository.inmemory\libragri.party.repository.inmemory.csproj", "{C66BE90D-1356-4111-B847-40A798F8E5E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.party.repository.inmemory", "libragri.party.repository.inmemory\libragri.party.repository.inmemory.csproj", "{C66BE90D-1356-4111-B847-40A798F8E5E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libragri.party.repository.interfaces", "libragri.party.repository.interfaces\libragri.party.repository.interfaces.csproj", "{198B2859-E57A-4ED4-8BD1-0ED187160DC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.party.repository.interfaces", "libragri.party.repository.interfaces\libragri.party.repository.interfaces.csproj", "{198B2859-E57A-4ED4-8BD1-0ED187160DC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libragri.party.service.impl", "libragri.party.service.impl\libragri.party.service.impl.csproj", "{371C5296-FC3D-44A7-9D87-29037A933325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.party.service.impl", "libragri.party.service.impl\libragri.party.service.impl.csproj", "{371C5296-FC3D-44A7-9D87-29037A933325}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libragri.party.service.interfaces", "libragri.party.service.interfaces\libragri.party.service.interfaces.csproj", "{727456F4-A6FC-4E6A-AF65-2ED6E4B350DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.party.service.interfaces", "libragri.party.service.interfaces\libragri.party.service.interfaces.csproj", "{727456F4-A6FC-4E6A-AF65-2ED6E4B350DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libragri.party.api", "libragri.party.api\libragri.party.api.csproj", "{6945E6DB-6FA8-47CD-811A-5E6476DA6289}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.party.api", "libragri.party.api\libragri.party.api.csproj", "{6945E6DB-6FA8-47CD-811A-5E6476DA6289}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "libragri.core.webapi", "libragri.core\libragri.core.webapi\libragri.core.webapi.csproj", "{97B5ABA5-CFB0-4696-A45B-5F599328E367}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -155,6 +157,18 @@ Global
 		{6945E6DB-6FA8-47CD-811A-5E6476DA6289}.Release|x64.Build.0 = Release|Any CPU
 		{6945E6DB-6FA8-47CD-811A-5E6476DA6289}.Release|x86.ActiveCfg = Release|Any CPU
 		{6945E6DB-6FA8-47CD-811A-5E6476DA6289}.Release|x86.Build.0 = Release|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Debug|x64.Build.0 = Debug|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Debug|x86.Build.0 = Debug|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Release|x64.ActiveCfg = Release|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Release|x64.Build.0 = Release|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Release|x86.ActiveCfg = Release|Any CPU
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +178,7 @@ Global
 		{15F08A42-C975-4D56-AD21-6C93467632B9} = {5D6B8161-BF10-49D6-8EB4-615B09F75E5E}
 		{48E0437B-9CCF-4C66-A268-2262CAA0170E} = {5D6B8161-BF10-49D6-8EB4-615B09F75E5E}
 		{F1B71EA9-EAA7-4732-BB7D-8B004765FADD} = {5D6B8161-BF10-49D6-8EB4-615B09F75E5E}
+		{97B5ABA5-CFB0-4696-A45B-5F599328E367} = {5D6B8161-BF10-49D6-8EB4-615B09F75E5E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {738328E1-B9C6-4D94-A643-35E8AE23ADBB}
