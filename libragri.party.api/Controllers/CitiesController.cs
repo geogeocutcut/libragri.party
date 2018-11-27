@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using libragri.core.common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,13 @@ namespace libragri.party.api.Controllers
     [ApiController]
     public class CitiesController : ControllerBase
     {
+        private IFactory _factory;
+
+        public CitiesController(IFactory factory)
+        {
+            _factory = factory;
+        }
+
         // GET: api/Cities
         [HttpGet]
         public IEnumerable<string> Get()
