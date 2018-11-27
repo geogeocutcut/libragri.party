@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\libragri.party.service.interfaces\libragri.party.service.interfaces.csproj" />
+  </ItemGroup>
+
 </Project>
