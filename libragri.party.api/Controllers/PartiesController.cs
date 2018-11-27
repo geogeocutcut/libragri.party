@@ -12,11 +12,13 @@ namespace libragri.party.api.Controllers
     [ApiController]
     public class PartiesController : ControllerBase
     {
-        IFactory _factory;
+        private IFactory _factory;
+
         public PartiesController(IFactory factory)
         {
             _factory = factory;
         }
+
         // GET: api/Parties
         [HttpGet]
         public IEnumerable<string> Get()
