@@ -8,11 +8,11 @@ namespace libragri.party.service.interfaces
     public interface IAddressTypeService
     {
         Task<IList<AddressType>> GetAllAsync();
-        Task<IList<AddressType>> GetByIdAsync(string id);
+        Task<AddressType> GetByIdAsync(string id);
 
-        Task<IList<AddressType>> AddAsync(AddressType party);
-        Task<IList<AddressType>> UpdateAsync(AddressType party);
-        Task<IList<AddressType>> DeleteAsync(AddressType party);
+        Task<AddressType> AddAsync(AddressType party);
+        Task<AddressType> UpdateAsync(AddressType party);
+        Task DeleteAsync(AddressType party);
 
     }
 }

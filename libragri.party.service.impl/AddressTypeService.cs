@@ -1,4 +1,7 @@
-﻿using libragri.party.model;
+﻿using libragri.core.common;
+using libragri.core.repository;
+using libragri.party.model;
+using libragri.party.repository.interfaces;
 using libragri.party.service.interfaces;
 using System;
 using System.Collections.Generic;
@@ -8,29 +11,68 @@ namespace libragri.party.service.impl
 {
     public class AddressTypeService : IAddressTypeService
     {
-        public Task<IList<AddressType>> AddAsync(AddressType party)
+        IFactory factory;
+
+        public AddressTypeService(IFactory factory)
         {
-            throw new NotImplementedException();
+            this.factory = factory;
         }
 
-        public Task<IList<AddressType>> DeleteAsync(AddressType party)
+        public async Task<AddressType> AddAsync(AddressType addressType)
         {
-            throw new NotImplementedException();
+            var uow = factory.Resolve<IUnitOfWork<string>>();
+            using (var transaction = await uow.BeginAsync())
+            {
+                var repository = factory.Resolve<IAddressTypeRepository>(uow);
+
+                var addressTypeTmp = await repository.UpsertAsync(addressType);
+                await uow.CommitAsync();
+
+                return addressTypeTmp;
+            }
+                
         }
 
-        public Task<IList<AddressType>> GetAllAsync()
+        public async Task DeleteAsync(AddressType addressType)
         {
-            throw new NotImplementedException();
+            var uow = factory.Resolve<IUnitOfWork<string>>();
+            using (var transaction = await uow.BeginAsync())
+            {
+                var repository = factory.Resolve<IAddressTypeRepository>(uow);
+
+                await repository.DeleteAsync(addressType);
+                await uow.CommitAsync();
+            }
         }
 
-        public Task<IList<AddressType>> GetByIdAsync(string id)
+        public async Task<IList<AddressType>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var uow = factory.Resolve<IUnitOfWork<string>>();
+            var repository = factory.Resolve<IAddressTypeRepository>(uow);
+
+            return await repository.GetAllAsync();
         }
 
-        public Task<IList<AddressType>> UpdateAsync(AddressType party)
+        public async Task<AddressType> GetByIdAsync(string id)
         {
-            throw new NotImplementedException();
+            var uow = factory.Resolve<IUnitOfWork<string>>();
+            var repository = factory.Resolve<IAddressTypeRepository>(uow);
+
+            return await repository.GetByIdAsync(id);
+        }
+
+        public async Task<AddressType> UpdateAsync(AddressType addressType)
+        {
+            var uow = factory.Resolve<IUnitOfWork<string>>();
+            using (var transaction = await uow.BeginAsync())
+            {
+                var repository = factory.Resolve<IAddressTypeRepository>(uow);
+
+                var addressTypeTmp = await repository.UpsertAsync(addressType);
+                await uow.CommitAsync();
+
+                return addressTypeTmp;
+            }
         }
     }
 }
